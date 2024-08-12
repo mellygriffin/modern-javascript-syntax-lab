@@ -110,13 +110,23 @@ myCar.model = 'q7';
 
 // console.log(myCar);
 
-//Exercise 6: dynamic keys in objects
+//Exercise 6: dynamic keys in objects ??? confused on this one...
 const userProfile = {
-    
-}
-
-const selectedProfile = {
-    [userProfile]: 6,
+    username: 'bilbo_baggins',
 };
 
-console.log(selectedProfile);
+const propertyName = 'username';
+const findUser = userProfile[propertyName];
+
+
+// console.log(findUser);
+
+//Exercise 7: Import and Export - Done.
+
+//Exercise 8: default parameters
+function description(noun = 'cat', adj = 'white') {
+    return `The ${description(noun)} is ${description(adj)}.`
+};
+
+description();
+
