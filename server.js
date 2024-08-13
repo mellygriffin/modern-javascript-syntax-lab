@@ -125,8 +125,39 @@ const findUser = userProfile[propertyName];
 
 //Exercise 8: default parameters
 function description(noun = 'cat', adj = 'white') {
-    return `The ${description(noun)} is ${description(adj)}.`
+    return `The ${noun} is ${adj}.`
 };
 
-description();
+// console.log(description());
 
+//Exercise 9: ternary operator
+let pizza = 'tasty';
+
+let tasteTest = pizza === 'tasty' ? 'yum' : 'yuck';
+
+// console.log(tasteTest);
+
+//Exercise 10: boolean gates
+//Number 1
+const localLangConfig = 'en';
+
+let LANG = localLangConfig;
+
+// console.log('Language setting:', LANG);
+
+//Number 2
+const userSavedTheme = 'dark';
+
+let USER_THEME = userSavedTheme;
+
+// console.log('User theme setting:', USER_THEME);
+
+const adventurer = {
+    name: 'Alice',
+};
+
+let cat = adventurer.cat?.age;
+
+console.log(cat);
+
+//DONE!
